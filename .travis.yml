@@ -9,7 +9,7 @@ install:
 
 script:
   #- python backup.py
-  - coverage run 
+  - coverage run scheduled-jobs-on-off.py
 
 after_success:
 - codecov
