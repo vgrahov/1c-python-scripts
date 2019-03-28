@@ -160,7 +160,7 @@ if __name__ == '__main__':
         cluster_id = cluster_ids[0]
     else:
         print("Не обнаружено ни одного кластера")
-        sys.exit(1)
+        sys.exit(0)
     if len(cluster_id) != 0:
         param = create_parameter_list("infobase", cluster_id, cluster_user, cluster_pw, "summary", "list", "", "", "",
                                       "", host)
@@ -168,7 +168,7 @@ if __name__ == '__main__':
         print(proc_result)
     else:
         print("Не обнаружено ни одного кластера")
-        sys.exit(1)
+        sys.exit(0)
     try:
         passwords = create_password_dict()
     except:
