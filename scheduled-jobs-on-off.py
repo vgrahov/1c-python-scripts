@@ -150,6 +150,7 @@ if __name__ == '__main__':
 
     ib_user = ""
     ib_pw = ""
+    cluster_id = ""
     cluster_user = "" #"Администратор"
     cluster_pw = ""
     host = "127.0.0.1"
