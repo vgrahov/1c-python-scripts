@@ -177,7 +177,9 @@ if __name__ == '__main__':
     cluster_ids = get_cluster_id()
     if len(cluster_ids) !=0:
         cluster_id = cluster_ids[0]
-
+    else:
+        print("Не обнаружено ни одного кластера")
+        sys.exit(1)
     if len(cluster_id) !=0:
         param = create_parameter_list("infobase",cluster_id,cluster_user,cluster_pw,"summary","list","","","","",host)
         proc_result = subprocess.check_output(param).decode("utf-8")
